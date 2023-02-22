@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+             /* background-color: rgb(210, 140, 140); */
+            height:80px;
+            width:100%;
+            display: flex;
+            
+        }
+        .container{
+            /* background-color:darkolivegreen; */
+            height:500px;
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            margin-top: 20px;
+
+            /* flex-wrap:nowrap ;
+            flex-flow: row;
+            flex-direction: row; */
+
+            /* justify-content: space-around;
+            justify-content: center;
+            text-align: center;
+            align-items: center; */
+
+            
+        }
+        /* .left,.right{
+            height:150px;
+           min-width:180px;
+            background-color:aqua;
+            display: flex;
+            flex-grow: 1;
+            /* margin-right: -30px; */
+            /* margin:10px;
+            margin-left: 10px; */
+            /* justify-content: center;
+            text-align: center;
+            align-items: center; */
+
+
+        
+        /* .center{
+            height:120px;
+            width:500px;
+            background-color: cornflowerblue;
+            display: flex;
+            margin:10px;
+            /* flex-grow: 1; */
+        
+        /* .center-1{
+            height:100px;
+            width:100px;
+            background-color:darkred;
+        } 
+        */
+        /* .left-1{
+            height:150px;
+           width:180px;
+            background-color:darkgreen;
+            display: flex;
+            /* flex-grow: 1; */
+            
+        
+        /* .right-1{
+            height:150px;
+           width:180px;
+            background-color:darkgreen;
+            display: flex;
+            flex-grow: 1;
+            margin-left: 20px;
+
+
+        }
+        .center-1{
+            height:120px;
+            width:500px;
+            background-color: cornflowerblue;
+            display: flex;
+            margin:10px;
+
+        } */
+        
+         .left{
+            width:250px;
+            height:375px;
+            /* background-color: darkviolet; */
+            border:1px solid #eee;
+            border-radius: 12px;
+         }
+         .center{
+            min-width:1fr;
+            /* background-color: rgb(184, 177, 136); */
+            height:150px;
+            flex-grow: 1;
+         }
+         .right{
+            width:280px;
+            height:375px;
+            /* background-color:greenyellow; */
+            margin-right: -20px;
+            border:1px solid #eee;
+            border-radius: 12px;
+
+         }
+         .right, h1, p{
+            text-align: center;
+            
+
+         }
+         #logo{
+            width:50px;
+            height:50px;
+            margin-top: 15px;
+            margin-left: 0px;
+            border-radius: 5px;
+            
+         }
+         #search{
+            height:45px;
+            width:186px;
+            margin-top:15px; ;
+            margin-left:4px ;
+            border-radius: 8px;
+            background:lightblue;
+         }
+         ul{
+            list-style: none;
+            margin-left: 197px;
+            display: flex;
+            border-right: 2px solid black;
+            padding-right: 30px;
+            height:55px
+            /* margin: 25px; */
+            /* margin-top: -50px;
+             */
+         }
+         ul img{
+            margin-top:6px;
+            margin-left:-17px;
+            margin-right:59px
+         }
+         li {
+            float:left;
+            padding-left: 10px;
+         }
+         a{
+            text-decoration: none;
+            margin-left: -23px;
+           
+         }
+         
+         .background{
+            height:80px;
+            width:250px;
+            background-image: url('backgroun.svg');
+         }
+         #arun{
+            height:60px;
+            width:60px;
+            margin-top: 60px;
+            margin-left: 98px;
+            border-radius: 50%;
+
+         }
+         .name{
+            margin-left: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height:20px;
+         }
+         
+         #arun2{
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            /* margin-top: 50px; */
+            margin-left: 45px;
+
+         }
+         #arun3{
+           width:459px;
+           height:39px;
+           margin-left: 30px;
+           border-radius: 50px;
+           padding-top:6px;
+         }
+         .image{
+            /* justify-content: center;
+            align-items: center;
+            text-align: center; */
+            margin-top: 30px;
+         }
+        .main{
+            margin: 10px;
+            margin-left:54px;
+            margin-top: 10px;
+            margin-right: -25px;
+
+        }
+        .main img{
+    
+            margin-right:-45px;
+            padding-left: 73px;
+
+        }
+        #photo1{
+            margin-top: 10px;
+        }
+        .main a{
+            margin:10px;
+            /* padding:5px;
+            padding-left: 10px; */
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+        #myntra1,#demo1,#demo2{
+           
+            height:230px;
+            width:553px;
+            margin-left: 380px;
+            padding:4px;
+            border:1px solid #eee;
+            border-radius: 7px;
+            
+        }
+        #myntra1{
+            margin-top: -227px;
+        }
+        .right1 h1{
+            height:48px;
+            width:39px;
+            background-color: forestgreen;
+            float:right;
+            border-radius: 50px;
+            margin-right: -92px;
+            margin-top:2px;
+            background-color: black;
+            color:white;
+            opacity: .5;
+            
+        }
+        .right1 h2{
+            float:right;
+            margin-right:-241px;
+            margin-top: 12px;
+            margin-left: 125px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="download.png" alt="" id="logo">
+        <input type="text" id="search" placeholder="Search">
+        <nav>
+            <ul>
+                <li><img src="home.svg" id="home" alt=""><br> <a href="#">Home</a> </li>
+                <li> <img src="group.svg" id="group" alt=""><br> <a href="#">Network</a></li>
+                <li> <img src="jobs.svg"id="jobs" alt=""> <br><a href="#">Jobs</a></li>
+                <li><img src="meassage.svg" id="meassage"alt=""> <br><a href="#">Meassage</a> </li>
+                <li><img src="notification.svg" id="notification"alt=""><br> <a href="#">Notification</a></li>
+                
+                <div class="right1">
+                    <h1>A</h1>
+                    <h2>Arun Kumar</h2>
+                </div>
+    
+            </ul>
+        </nav>
+
+
+    </header>
+    <div class="container">
+        <div class="left">
+
+           <div class="background">
+            <!-- <img src="backgroun.svg" height="200px" width="250px" alt=""> -->
+            <div class="profile">
+                <img src="Arun.jpg" id="arun" alt="">
+            </div>
+            <div class="name">
+                <h3>Arun Verma</h3>
+                <h2>Full stack devoloper</h2>
+                <hr>
+            <h1>Linkedin News</h1>
+            <p>Student of Skill Academy</p>
+            <p>Good Platform of Skill Academy</p>
+            </div>
+        </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img src="Arun.jpg" id="arun2" alt="">
+                <input type="text" id="arun3" placeholder="Start a Post">
+            </div>
+            <div class="main">
+                <img src="photo.png" id="photo1"><a href="#">Photo</a>
+                <img src="video.png" id="video1" ><a href="#">Video</a>
+                <img src="event.png" id="event1"><a href="#">Event</a>
+                <img src="hashtag.png" id="hashtag1" ><a href="#">Write Artical</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Recent Viewer</h1>
+            <p>#Maharaja Goyal</p>
+            <p>#Saurav Kumar</p>
+            <p>#Indrajeet singh</p>
+            <p>#Kumar Arun</p>
+           
+        </div>
+        <div class="left-1"></div>
+        <div class="center-1">
+            <img src="myntra logo[86].jpg" id="myntra1">
+            <img src="Demo post image[87].jpg" id="demo1">
+            <img src="Demo post video[85].jpg" id="demo2">
+        </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
